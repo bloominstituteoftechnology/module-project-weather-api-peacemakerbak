@@ -24,7 +24,7 @@ async function moduleProject4() {
       document.querySelector('.info').textContent = 'Fetching weather data...' // capture the p of interest: class name of info & display fetching weather data
 
       let city = event.target.value // get the selected city
-      let url = `hhttp://localhost:3003/api/weather?city=${city}` // capture the url to fetch the weather data
+      let url = `http://localhost:3003/api/weather?city=${city}` // capture the url to fetch the weather data
       
       const response = await axios.get(url) // fetch the weather data
 
